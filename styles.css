@@ -91,8 +91,8 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:#9fb0b6}
   .site-header{grid-template-columns:1fr auto auto;padding:8px 14px}.brand img{width:64px;height:64px}.top-phone{display:block;font-size:13px}.top-phone:before{margin-right:6px}.menu-toggle{font-size:25px}
   .hero{min-height:660px;background-size:auto 100%;background-position:55% center}
   .hero-shade{background:linear-gradient(90deg,rgba(2,14,18,.94) 0%,rgba(2,14,18,.78) 72%,rgba(2,14,18,.58) 100%)}
-  .hero-content{padding-top:50px;padding-bottom:48px;padding-right:46px}
-  .hero h1{font-size:clamp(43px,13vw,59px);max-width:300px;line-height:.96}
+  .hero-content{padding-top:50px;padding-bottom:48px;padding-right:72px}
+  .hero h1{font-size:clamp(38px,11.6vw,52px);max-width:250px;line-height:.96;overflow-wrap:anywhere}
   .hero-rule{margin:22px 0 20px;width:44px}
   .lead{font-size:17px;max-width:300px}
   .hero-actions{display:grid;grid-template-columns:1fr;margin-top:28px}.hero-actions .btn{width:100%}
