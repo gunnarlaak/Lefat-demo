@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#062f3a" />
+  <title>Mootorid & Käigukastid | Lefat OÜ</title>
+  <meta name="description" content="Lefat OÜ – mootorite ja automaatkäigukastide remont, diagnostika, hooldus ja tavaremont Kärstnas, Viljandimaal." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#avaleht" aria-label="Mootorid ja Käigukastid avaleht">
+      <img src="assets/logo.png" alt="Mootorid & Käigukastid – sinu auto personaalne hooldus" />
+    </a>
+    <button class="menu-toggle" aria-label="Ava menüü" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Põhimenüü">
+      <a href="#teenused">Teenused</a>
+      <a href="#broneeri">Broneeri aeg</a>
+      <a href="#meist">Meist</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="phone top-phone" href="tel:+37256942904">+372 5694 2904</a>
+  </header>
+
+  <main>
+    <section id="avaleht" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content wrap">
+        <p class="eyebrow">Kärstna · Viljandi maakond</p>
+        <h1>Autoremont,<br><span>mis läheb sügavamale.</span></h1>
+        <p class="lead">Mootorite ja automaatkäigukastide remont, diagnostika, hooldus ja tavaremont.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#broneeri">Broneeri aeg</a>
+          <a class="btn ghost" href="tel:+37256942904">Helista +372 5694 2904</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="teenused" class="section wrap">
+      <div class="section-head">
+        <p class="eyebrow">Teenused</p>
+        <h2>Kui viga pole lihtne, alustame diagnoosist.</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card featured">
+          <div class="icon">⚙</div>
+          <h3>Mootorid</h3>
+          <p>Diagnostika, remont, kapitaalremont ja mootori taastamine.</p>
+          <a href="#broneeri" data-service="Mootor">Broneeri diagnostika →</a>
+        </article>
+        <article class="service-card featured">
+          <div class="icon">⇄</div>
+          <h3>Automaatkäigukastid</h3>
+          <p>Diagnostika, hooldus, remont ja taastamine.</p>
+          <a href="#broneeri" data-service="Automaatkäigukast">Broneeri diagnostika →</a>
+        </article>
+        <article class="service-card">
+          <div class="icon">🔧</div>
+          <h3>Hooldus & remont</h3>
+          <p>Pidurid, veermik, õlivahetus, tavahooldus ja muud remonditööd.</p>
+          <a href="#broneeri" data-service="Hooldus ja remont">Broneeri aeg →</a>
+        </article>
+        <article class="service-card">
+          <div class="icon">⌁</div>
+          <h3>Diagnostika</h3>
+          <p>Kui sa ei tea, mis täpselt viga on, kirjelda sümptomeid. Leiame järgmise sammu.</p>
+          <a href="#broneeri" data-service="Diagnostika">Kirjelda probleemi →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="symptoms-band">
+      <div class="wrap symptoms-grid">
+        <div>
+          <p class="eyebrow">Probleem autoga?</p>
+          <h2>Sa ei pea teadma, mis katki on.</h2>
+        </div>
+        <div class="symptom-list">
+          <span>Jõnksutab käiguvahetusel</span>
+          <span>Mootor töötab ebaühtlaselt</span>
+          <span>Auto kaotab jõu</span>
+          <span>Kostab undamist või kolinat</span>
+          <span>Süttis hoiatustuli</span>
+          <span>Õli või vedelik lekib</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="broneeri" class="section booking-section">
+      <div class="wrap booking-layout">
+        <div class="booking-copy">
+          <p class="eyebrow">Broneerimine</p>
+          <h2>Kirjelda autot ja vali sobiv aeg.</h2>
+          <p>Keerulisema mootori- või käigukastitöö puhul broneerid esmalt diagnostika. Remondi maht ja aeg lepitakse kokku pärast vea tuvastamist.</p>
+          <div class="steps">
+            <div><b>1</b><span>Vali teenus</span></div>
+            <div><b>2</b><span>Lisa auto andmed</span></div>
+            <div><b>3</b><span>Vali aeg</span></div>
+            <div><b>4</b><span>Kinnita</span></div>
+          </div>
+        </div>
+
+        <form id="bookingForm" class="booking-card">
+          <label>Teenuse tüüp
+            <select id="service" name="service" required>
+              <option value="">Vali teenus</option>
+              <option>Mootor</option>
+              <option>Automaatkäigukast</option>
+              <option>Diagnostika</option>
+              <option>Hooldus ja remont</option>
+              <option>Muu probleem</option>
+            </select>
+          </label>
+
+          <div class="two-col">
+            <label>Auto mark ja mudel
+              <input name="car" placeholder="nt BMW 530d" required />
+            </label>
+            <label>Registreerimisnumber
+              <input name="reg" placeholder="123 ABC" required />
+            </label>
+          </div>
+
+          <div class="two-col">
+            <label>Aasta
+              <input name="year" type="number" min="1950" max="2030" placeholder="2018" />
+            </label>
+            <label>Läbisõit
+              <input name="mileage" placeholder="nt 212 000 km" />
+            </label>
+          </div>
+
+          <label>Kirjelda probleemi
+            <textarea name="problem" rows="4" placeholder="Näiteks: külmalt vahetab 2→3 käiku jõnksuga." required></textarea>
+          </label>
+
+          <div class="two-col">
+            <label>Kuupäev
+              <input id="date" name="date" type="date" required />
+            </label>
+            <label>Kellaaeg
+              <select name="time" required>
+                <option value="">Vali aeg</option>
+                <option>09:00</option>
+                <option>10:30</option>
+                <option>12:00</option>
+                <option>14:00</option>
+                <option>15:30</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="two-col">
+            <label>Nimi
+              <input name="name" autocomplete="name" required />
+            </label>
+            <label>Telefon
+              <input name="phone" type="tel" autocomplete="tel" required />
+            </label>
+          </div>
+
+          <label>E-post
+            <input name="email" type="email" autocomplete="email" />
+          </label>
+
+          <button class="btn primary full" type="submit">Saada broneering</button>
+          <p class="form-note">Praeguses demoversioonis salvestatakse broneering brauserisse. Google Calendari ühendus aktiveeritakse eraldi serveri seadistamisel.</p>
+          <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="meist" class="section wrap about-grid">
+      <div>
+        <p class="eyebrow">Lefat OÜ</p>
+        <h2>Personaalne hooldus, ka keerulisema vea puhul.</h2>
+      </div>
+      <div>
+        <p>Mootorid & Käigukastid tegeleb nii tavahoolduse kui ka spetsiifilisemate töödega: mootorite ja automaatkäigukastide diagnostika ning remont.</p>
+        <p>Enne suuremat remonti selgitame vea, töö mahu ja järgmise sammu.</p>
+      </div>
+    </section>
+
+    <section id="kontakt" class="contact-section">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h2>Kärstna, Viljandi maakond</h2>
+          <a class="contact-phone" href="tel:+37256942904">+372 5694 2904</a>
+          <p>Lefat OÜ</p>
+        </div>
+        <div class="contact-card">
+          <h3>Kas autoga on kiire?</h3>
+          <p>Helista ja kirjelda probleemi. Kui telefonile kohe ei vastata, proovi mõne aja pärast uuesti.</p>
+          <a class="btn primary" href="tel:+37256942904">Helista</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© <span id="yearNow"></span> Lefat OÜ</span>
+      <span>Mootorid & Käigukastid</span>
+    </div>
+  </footer>
+
+  <div class="mobile-actions">
+    <a href="tel:+37256942904">Helista</a>
+    <a href="#broneeri">Broneeri</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
