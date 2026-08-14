@@ -3,21 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#062f3a" />
-  <title>Mootorid & Käigukastid | Lefat OÜ</title>
-  <meta name="description" content="Lefat OÜ – mootorite ja automaatkäigukastide remont, diagnostika, hooldus ja tavaremont Kärstnas, Viljandimaal." />
+  <meta name="theme-color" content="#041a21" />
+  <title>Renomoto.ee | Lefat OÜ</title>
+  <meta name="description" content="Renomoto.ee – mootorite ja automaatkäigukastide remont, diagnostika, hooldus ja tavaremont Kärstnas, Viljandimaal." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#avaleht" aria-label="Mootorid ja Käigukastid avaleht">
-      <img src="assets/logo.png" alt="Mootorid & Käigukastid – sinu auto personaalne hooldus" />
+    <a class="brand" href="#avaleht" aria-label="Renomoto avaleht">
+      <img src="assets/logo.png" alt="Renomoto.ee" />
     </a>
     <button class="menu-toggle" aria-label="Ava menüü" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Põhimenüü">
+      <a href="#avaleht">Avaleht</a>
       <a href="#teenused">Teenused</a>
-      <a href="#broneeri">Broneeri aeg</a>
       <a href="#meist">Meist</a>
+      <a href="#broneeri">Broneeri aeg</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
     <a class="phone top-phone" href="tel:+37256942904">+372 5694 2904</a>
@@ -25,64 +26,53 @@
 
   <main>
     <section id="avaleht" class="hero">
-      <div class="hero-overlay"></div>
+      <div class="hero-shade"></div>
       <div class="hero-content wrap">
-        <p class="eyebrow">Kärstna · Viljandi maakond</p>
-        <h1>Autoremont,<br><span>mis läheb sügavamale.</span></h1>
+        <h1>Detailideni<br><span>täpne</span><br>autoremont</h1>
+        <div class="hero-rule"></div>
         <p class="lead">Mootorite ja automaatkäigukastide remont, diagnostika, hooldus ja tavaremont.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#broneeri">Broneeri aeg</a>
-          <a class="btn ghost" href="tel:+37256942904">Helista +372 5694 2904</a>
+          <a class="btn ghost" href="tel:+37256942904">+372 5694 2904</a>
         </div>
+        <p class="location-line">● Kärstna, Viljandi maakond</p>
       </div>
     </section>
 
-    <section id="teenused" class="section wrap">
-      <div class="section-head">
-        <p class="eyebrow">Teenused</p>
-        <h2>Kui viga pole lihtne, alustame diagnoosist.</h2>
-      </div>
-      <div class="service-grid">
-        <article class="service-card featured">
-          <div class="icon">⚙</div>
-          <h3>Mootorid</h3>
-          <p>Diagnostika, remont, kapitaalremont ja mootori taastamine.</p>
-          <a href="#broneeri" data-service="Mootor">Broneeri diagnostika →</a>
-        </article>
-        <article class="service-card featured">
-          <div class="icon">⇄</div>
-          <h3>Automaatkäigukastid</h3>
-          <p>Diagnostika, hooldus, remont ja taastamine.</p>
-          <a href="#broneeri" data-service="Automaatkäigukast">Broneeri diagnostika →</a>
-        </article>
-        <article class="service-card">
-          <div class="icon">🔧</div>
-          <h3>Hooldus & remont</h3>
-          <p>Pidurid, veermik, õlivahetus, tavahooldus ja muud remonditööd.</p>
-          <a href="#broneeri" data-service="Hooldus ja remont">Broneeri aeg →</a>
-        </article>
-        <article class="service-card">
-          <div class="icon">⌁</div>
-          <h3>Diagnostika</h3>
-          <p>Kui sa ei tea, mis täpselt viga on, kirjelda sümptomeid. Leiame järgmise sammu.</p>
-          <a href="#broneeri" data-service="Diagnostika">Kirjelda probleemi →</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="symptoms-band">
-      <div class="wrap symptoms-grid">
-        <div>
-          <p class="eyebrow">Probleem autoga?</p>
-          <h2>Sa ei pea teadma, mis katki on.</h2>
+    <section id="teenused" class="section services-section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Teenused</p>
+          <h2>Remont ja hooldus, ka keerulisemate vigade puhul.</h2>
         </div>
-        <div class="symptom-list">
-          <span>Jõnksutab käiguvahetusel</span>
-          <span>Mootor töötab ebaühtlaselt</span>
-          <span>Auto kaotab jõu</span>
-          <span>Kostab undamist või kolinat</span>
-          <span>Süttis hoiatustuli</span>
-          <span>Õli või vedelik lekib</span>
+
+        <div class="service-grid">
+          <article class="service-card featured engine-card">
+            <div class="service-copy">
+              <div class="icon">⚙</div>
+              <h3>Mootorid</h3>
+              <p>Diagnostika · remont · kapitaalremont</p>
+              <a href="#broneeri" data-service="Mootor">Vaata lähemalt →</a>
+            </div>
+          </article>
+
+          <article class="service-card featured gearbox-card">
+            <div class="service-copy">
+              <div class="icon">▦</div>
+              <h3>Automaatkäigukastid</h3>
+              <p>Diagnostika · hooldus · remont</p>
+              <a href="#broneeri" data-service="Automaatkäigukast">Vaata lähemalt →</a>
+            </div>
+          </article>
+
+          <article class="service-card repair-card">
+            <div class="service-copy">
+              <div class="icon">⌕</div>
+              <h3>Hooldus &amp; remont</h3>
+              <p>Veermik · pidurid · õlid · diagnostika</p>
+              <a href="#broneeri" data-service="Hooldus ja remont">Vaata lähemalt →</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -124,7 +114,7 @@
 
           <div class="two-col">
             <label>Aasta
-              <input name="year" type="number" min="1950" max="2030" placeholder="2018" />
+              <input name="year" type="number" min="1950" max="2035" placeholder="2018" />
             </label>
             <label>Läbisõit
               <input name="mileage" placeholder="nt 212 000 km" />
@@ -165,7 +155,7 @@
           </label>
 
           <button class="btn primary full" type="submit">Saada broneering</button>
-          <p class="form-note">Praeguses demoversioonis salvestatakse broneering brauserisse. Google Calendari ühendus aktiveeritakse eraldi serveri seadistamisel.</p>
+          <p class="form-note">Demoversioonis salvestatakse broneering brauserisse. Google Calendari ühendus aktiveeritakse eraldi serveri seadistamisel.</p>
           <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
         </form>
       </div>
@@ -173,11 +163,11 @@
 
     <section id="meist" class="section wrap about-grid">
       <div>
-        <p class="eyebrow">Lefat OÜ</p>
+        <p class="eyebrow">Renomoto.ee · Lefat OÜ</p>
         <h2>Personaalne hooldus, ka keerulisema vea puhul.</h2>
       </div>
       <div>
-        <p>Mootorid & Käigukastid tegeleb nii tavahoolduse kui ka spetsiifilisemate töödega: mootorite ja automaatkäigukastide diagnostika ning remont.</p>
+        <p>Tegeleme nii tavahoolduse kui ka spetsiifilisemate töödega: mootorite ja automaatkäigukastide diagnostika ning remont.</p>
         <p>Enne suuremat remonti selgitame vea, töö mahu ja järgmise sammu.</p>
       </div>
     </section>
@@ -188,7 +178,7 @@
           <p class="eyebrow">Kontakt</p>
           <h2>Kärstna, Viljandi maakond</h2>
           <a class="contact-phone" href="tel:+37256942904">+372 5694 2904</a>
-          <p>Lefat OÜ</p>
+          <p>Lefat OÜ · renomoto.ee</p>
         </div>
         <div class="contact-card">
           <h3>Kas autoga on kiire?</h3>
@@ -202,7 +192,7 @@
   <footer>
     <div class="wrap footer-inner">
       <span>© <span id="yearNow"></span> Lefat OÜ</span>
-      <span>Mootorid & Käigukastid</span>
+      <span>renomoto.ee</span>
     </div>
   </footer>
 
