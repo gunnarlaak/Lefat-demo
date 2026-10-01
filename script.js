@@ -65,3 +65,22 @@ document.querySelectorAll('.service-card a[href^="#"]').forEach(link => {
     history.replaceState(null, '', link.getAttribute('href'));
   });
 });
+
+// Home navigation must always return to the real top of the page.
+// Using #avaleht directly with a sticky header can position the hero under the header.
+document.querySelectorAll('a[href="#avaleht"]').forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    nav?.classList.remove('open');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  });
+});
+
+// If an old/bookmarked URL is opened with #avaleht, normalize it to page top.
+if (window.location.hash === '#avaleht') {
+  requestAnimationFrame(() => {
+    window.scrollTo(0, 0);
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  });
+}

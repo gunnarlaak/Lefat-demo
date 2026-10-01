@@ -120,3 +120,6 @@ html{scroll-padding-top:140px}
   html{scroll-padding-top:105px}
   .service-detail{scroll-margin-top:105px}
 }
+
+/* Home anchor safety with sticky header */
+#avaleht{scroll-margin-top:0}
