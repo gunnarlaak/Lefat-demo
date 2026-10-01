@@ -119,3 +119,53 @@ html{scroll-padding-top:140px}
 
 /* Home anchor safety with sticky header */
 #avaleht{scroll-margin-top:0}
+
+/* v9: one continuous background across the whole website */
+html { background:#03161d; }
+body {
+  position: relative;
+  isolation: isolate;
+  background: transparent;
+}
+body::before {
+  content:"";
+  position: fixed;
+  z-index:-2;
+  inset:0;
+  background-color:#03161d;
+  background-image:url('assets/background.png');
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+body::after {
+  content:"";
+  position:fixed;
+  z-index:-1;
+  inset:0;
+  pointer-events:none;
+  background:rgba(1,16,21,.72);
+}
+.hero,
+.services-section,
+.booking-section,
+.contact-section {
+  background-color:transparent;
+  background-image:none;
+}
+.hero-shade {
+  background:linear-gradient(90deg,rgba(2,14,18,.72) 0%,rgba(2,14,18,.52) 48%,rgba(2,14,18,.18) 100%);
+}
+.services-section { background:rgba(3,22,29,.32); }
+.booking-section { background:rgba(2,16,21,.42); }
+.contact-section { background:rgba(8,42,52,.52); }
+
+@media (max-width:760px){
+  body::before {
+    background-size:auto 100vh;
+    background-position:center top;
+    background-repeat:repeat-y;
+  }
+  body::after { background:rgba(1,16,21,.66); }
+  .hero { background:none; }
+}
