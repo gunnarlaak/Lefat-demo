@@ -112,3 +112,11 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:#9fb0b6}
   .two-col,.steps{grid-template-columns:1fr}.booking-card{padding:20px}.footer-inner{flex-direction:column}
   .mobile-actions{position:fixed;z-index:60;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr 1fr;background:#031116;border-top:1px solid var(--line)}.mobile-actions a{padding:17px;text-align:center;font-weight:900;text-transform:uppercase}.mobile-actions a:last-child{background:var(--orange);color:#111}
 }
+
+/* Anchor navigation fix: keep service article headings visible below sticky header */
+html{scroll-padding-top:140px}
+.service-detail{scroll-margin-top:140px}
+@media (max-width:700px){
+  html{scroll-padding-top:105px}
+  .service-detail{scroll-margin-top:105px}
+}

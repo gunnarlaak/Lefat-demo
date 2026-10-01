@@ -49,3 +49,19 @@ form.addEventListener('submit', async (e) => {
     msg.textContent = 'Demobroneering salvestatud selles brauseris. Google Calendari jaoks tuleb backend aktiveerida.';
   }
 });
+
+// Service-card anchor navigation: account for the sticky header so the
+// beginning of each article is never hidden behind it.
+document.querySelectorAll('.service-card a[href^="#"]').forEach(link => {
+  link.addEventListener('click', (event) => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (!target) return;
+    event.preventDefault();
+    const header = document.querySelector('.site-header');
+    const headerHeight = header ? header.getBoundingClientRect().height : 0;
+    const extraGap = window.innerWidth <= 700 ? 18 : 28;
+    const top = target.getBoundingClientRect().top + window.scrollY - headerHeight - extraGap;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    history.replaceState(null, '', link.getAttribute('href'));
+  });
+});
