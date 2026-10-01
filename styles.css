@@ -226,3 +226,17 @@ body::after{background:rgba(1,16,21,.42)}
   .top-phone:before{display:none}
   .menu-toggle{width:52px;height:52px}
 }
+
+/* v11: full-width continuous page background */
+body::before{
+  background-size:100% auto;
+  background-position:center top;
+  background-repeat:repeat-y;
+}
+@media (max-width:760px){
+  body::before{
+    background-size:100% auto;
+    background-position:center top;
+    background-repeat:repeat-y;
+  }
+}
