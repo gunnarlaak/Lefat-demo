@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://renomoto.ee/sitemap.xml
