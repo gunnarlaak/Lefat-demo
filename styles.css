@@ -169,3 +169,60 @@ body::after {
   body::after { background:rgba(1,16,21,.66); }
   .hero { background:none; }
 }
+
+/* v10: make the workshop pattern clearly visible throughout the page */
+body::before{
+  opacity:1;
+  background-size:1920px auto;
+  background-position:center top;
+  background-repeat:repeat-y;
+}
+body::after{background:rgba(1,16,21,.42)}
+.hero-shade{background:linear-gradient(90deg,rgba(2,14,18,.68) 0%,rgba(2,14,18,.45) 48%,rgba(2,14,18,.10) 100%)}
+.services-section{background:rgba(3,22,29,.16)}
+.booking-section{background:rgba(2,16,21,.24)}
+.contact-section{background:rgba(8,42,52,.28)}
+
+@media (max-width:760px){
+  .site-header{
+    position:sticky;
+    grid-template-columns:1fr 72px 1fr;
+    gap:0;
+    padding:8px 14px;
+  }
+  .brand{justify-self:start}
+  .menu-toggle{
+    display:block;
+    justify-self:center;
+    grid-column:2;
+    grid-row:1;
+    width:56px;
+    height:56px;
+    padding:0;
+    line-height:1;
+    text-align:center;
+  }
+  .top-phone{
+    justify-self:end;
+    grid-column:3;
+    grid-row:1;
+    white-space:nowrap;
+  }
+  .nav{top:81px}
+  body::before{
+    background-size:auto 720px;
+    background-position:center top;
+    background-repeat:repeat-y;
+  }
+  body::after{background:rgba(1,16,21,.38)}
+  .services-section{background:rgba(3,22,29,.12)}
+  .booking-section{background:rgba(2,16,21,.18)}
+  .contact-section{background:rgba(8,42,52,.22)}
+}
+
+@media (max-width:430px){
+  .site-header{grid-template-columns:1fr 64px 1fr;padding-left:12px;padding-right:12px}
+  .top-phone{font-size:12px}
+  .top-phone:before{display:none}
+  .menu-toggle{width:52px;height:52px}
+}
